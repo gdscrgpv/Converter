@@ -13,7 +13,7 @@ body::before{
     position: absolute;
     width: 100vw;
     height: 100vh;
-    background-image: url(image.jpeg);
+    background-image: url(simquadrat_bw_2560x1440.png);
     background-position: center center;
     background-size: cover;
     background-blend-mode: darken;
