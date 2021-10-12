@@ -11,30 +11,62 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <link rel="stylesheet" href="conversion.css">
+    <link rel="icon" href="logo.png" type="image/x-icon">
 </head>
 
 <body>
-
+    <!-- <section> -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #1c1c1c;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" alt="logo" width="30" height="24" class="d-inline-block align-text-top"
+                    style="border-radius: 12px;">
+                Converter
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Binary</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Hexadecimal</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav" style="margin-left: auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- </section> -->
 
     <section>
         <div class="container">
             <div class="form-hold p-5">
 
 
-                <h3 class="text-center heading mb-3">Binary To Decimal</h3>
+                <h3 class="text-center heading mb-10 h2" style="padding-bottom: 40px; color: orange;">Binary To Decimal
+                </h3>
 
                 <div class="row g-3  ">
                     <div class="col-12 col-md-6">
-                        <h6 class="text" >Binary</h6>
-                        <input type="text"  id="bin" class="form-control">
+                        <h5 class="text" style="padding-bottom: 10px;">Binary</h5>
+                        <input type=" text" id="bin" class="form-control">
                     </div>
                     <div class="col-12 col-md-6">
-                        <h6 class="text" >Decimal</h6>
+                        <h5 class="text" style="padding-bottom: 10px;">Decimal</h5>
                         <input type="text" id="dec" class="form-control">
                     </div>
-                    <div class=" mx-auto ">
-                        <button class="btn bg-light" onclick="binToDec()">Convert</button>
-                        <button class="btn ms-2 bg-light" onclick="binreset()">Reset</button>
+                    <div class=" mx-auto " style="padding-top: 40px;">
+                        <button type="button" class="btn btn-success" onclick="binToDec()">Convert</button>
+                        <button type="button" class="btn btn-success" onclick="binreset()">Reset</button>
                     </div>
                 </div>
 
@@ -43,6 +75,25 @@
         </div>
 
     </section>
+
+    <div class='footer-div'>
+        <footer class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-between p-3 py-4">
+                <div>
+                    <Text {...TextProps}>
+                        &copy;2021
+                        <a href="#">
+                            GDSC RGPV
+                        </a>
+                    </Text>
+                </div>
+                <div>
+                    Converter&trade; is made with 🍕, ☕ and 💻
+                </div>
+            </div>
+        </footer>
+    </div>
+
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
