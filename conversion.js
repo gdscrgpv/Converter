@@ -1,16 +1,12 @@
-const binToDec = () => {
-    // Takes value from text input and performs conversion, then replaces decimal value
+const binToBase = (base = 10) => {
+    // Takes a base (defaults to 10), performs the conversion, and displays the result
     var binText = document.getElementById("bin").value;
     var dec = parseInt(binText, 2);
-    document.getElementById("dec").value = dec.toString();
+    document.getElementById("res").value = dec.toString(base);
 }
-const bintoHexa = () =>{
-     var x= document.getElementById("bin").value;
-      var dec = parseInt(x, 2);
-        document.getElementById("dec").value = dec.toString(16).toUpperCase();
-}
+
 const binreset = () => {
     // Reset the two fields
     document.getElementById("bin").value = "";
-    document.getElementById("dec").value = "";
+    document.getElementById("res").value = "";
 }
