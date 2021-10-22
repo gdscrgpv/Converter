@@ -18,9 +18,8 @@ body::before {
     position: absolute;
     width: 100vw;
     height: 100vh;
-    background-image: url(simquadrat_bw_2560x1440.png);
-    background-position: center center;
-    background-size: cover;
+    background-image: url(animation.gif);
+    background-size: contain;
     background-blend-mode: darken;
     top: 0;
     right: 0;
@@ -38,7 +37,7 @@ body::before {
 }
 
 .form-hold {
-    background-color: rgba(41, 41, 41, 0.6);
+    background-color: rgba(41, 41, 41, 0.3);
     border-radius: 50px;
 }
 
@@ -78,4 +77,8 @@ input {
         width: auto;
         height: 100%;
     }
+}
+#center{
+    text-align: center;
+    margin-left: 450px;
 }
