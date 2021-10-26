@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Faster+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sarpanch:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Coda:wght@800&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -11,38 +14,50 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    background-image: url(bg2.png);
+    background-size: cover;
 }
 
-body::before {
-    content: '';
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    background-image: url(animation.gif);
-    background-size: contain;
-    background-blend-mode: darken;
-    top: 0;
-    right: 0;
-}
 
 .container {
     position: relative;
     width: 700px;
 }
 
-.navbar {
+.btn-outline-dark {
+    background-color: #FF9700 !important;
+    border-color: #FF9700 !important;
+}
+
     position: fixed;
     top: 0;
     width: 100%;
 }
 
 .form-hold {
-    background-color: rgba(41, 41, 41, 0.3);
+    background-color: rgba(41, 41, 41, 0.6);
     border-radius: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 600;
+    width: max-content;
+}
+
+.contact a {
+    color: #fff !important;
+}
+
+.form-hold {
+    background-color: rgba(150, 150, 150, 0.192);
+    border-radius: 150px 2px 2px 2px;
 }
 
 .heading {
-    color: white;
+    letter-spacing: 1px;
+    word-spacing: 2.5px;
+    font-family: 'Coda', cursive;
+    padding-bottom: 37px;
+    color: #FF9700;
 }
 
 .form-hold input[type=text] {
@@ -63,12 +78,18 @@ input {
     position: fixed;
     bottom: 0;
     width: 100%;
-    color: white;
-    background-color: #1c1c1c;
+    color: #fff;
+    background-color: rgb(5, 5, 5);
+}
+
+.nav-link:active,
+.nav-link:hover,
+.nav-link:focus {
+    color: #fff !important;
 }
 
 .footer-div a {
-    color: orange;
+    color: rgb(255, 166, 0);
     text-decoration: none;
 }
 
@@ -77,8 +98,4 @@ input {
         width: auto;
         height: 100%;
     }
-}
-#center{
-    text-align: center;
-    margin-left: 450px;
 }
