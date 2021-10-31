@@ -11,9 +11,11 @@
 
     <link rel="icon" href="logo4.png" type="image/x-icon">
     <link rel="stylesheet" href="conversion.css">
+    <link rel="stylesheet" href="particles.css">
 </head>
 
 <body>
+    <div id="particles-js" class="particles"></div>
     <!-- <section> -->
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #1c1c1cf5;">
         <div class="container-fluid">
@@ -100,6 +102,11 @@
 
     <!-- ------------------------------------ -->
     <script src="conversion.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.js"></script>
+    <script>
+        particlesJS.load('particles-js', './particles.json', function() {
+        console.log('Particle.js has been loaded ...');
+    });</script>
 </body>
 
 </html>
